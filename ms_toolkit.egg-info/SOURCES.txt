@@ -1,3 +1,5 @@
+LICENSE
+README.md
 setup.py
 ms_toolkit.egg-info/PKG-INFO
 ms_toolkit.egg-info/SOURCES.txt
