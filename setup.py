@@ -9,8 +9,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name="ms_toolkit",
-    version="0.1.2",
+    name="msmathx",
+    version="0.1.1",
     packages=find_packages(),
     install_requires=[
         "pandas",

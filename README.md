@@ -1,9 +1,11 @@
-# ms_toolkit
+# msmthx
 Pacote para manipulação, limpeza e visualização de dados na sua versão (0.1.0)
 
 
 
-# ms_toolkit
+
+
+# msmthx
 
 **ms_toolkit** é uma biblioteca Python leve e modular projetada para facilitar tarefas comuns no tratamento, limpeza, visualização e análise de dados. Este pacote oferece funções para carregar arquivos CSV, limpar dados, visualizar correlações e calcular estatísticas como média, mediana e moda, tudo em módulos bem organizados.
 
@@ -15,7 +17,7 @@ git clone https://github.com/usuario/ms_toolkit.git
 ##
 
 # Ou, se você preferir, instale com pip (assumindo que o pacote foi publicado no PyPI):
-- pip install ms_toolkit
+- pip install msmthx
 
 ## Funcionalidades
 1. Carregamento de Dados
@@ -24,7 +26,7 @@ O módulo msdt fornece funções para carregar e manipular dados de arquivos CSV
 # Funções:
 - ld(): Carrega um arquivo CSV para um DataFrame.
 
-   from ms_toolkit import ld
+   from msmthx import ld
 
   df = ld('arquivo.csv', sep=';')
 
@@ -38,7 +40,7 @@ dmv(): Remove valores ausentes de um DataFrame.
 dr(): Remove valores duplicados de um DataFrame.
 scn(): Padroniza os nomes das colunas (minúsculas e sem espaços).
 
-from ms_toolkit import dmv, dr, scn
+from msmthx import dmv, dr, scn
 
 df_cleaned = dmv(df)
 df_no_duplicates = dr(df_cleaned)
@@ -52,7 +54,7 @@ O módulo msvzt oferece uma função para gerar mapas de calor das correlações
 
 Função:
 pltch(): Plota um mapa de calor da correlação entre as colunas numéricas do DataFrame.
-from ms_toolkit import pltch
+from msmthx import pltch
 
 pltch(df)
 
@@ -69,7 +71,7 @@ modc(): Calcula a moda.
 
 ##
 
-from ms_toolkit import msn, mdn, modc
+from msmthx import msn, mdn, modc
 
 data = [1, 2, 2, 3, 4, 5]
 
@@ -86,7 +88,7 @@ print(f"Moda: {moda}")
 # Testes
 Para garantir que tudo esteja funcionando corretamente, você pode executar testes diretamente em seu Jupyter Notebook ou no Python:
 
-from ms_toolkit import ld, dmv, pltch, msn, mdn, modc
+from msmthx import ld, dmv, pltch, msn, mdn, modc
 
 # Teste de carregamento de CSV
 df = ld('dados.csv', sep=';')
